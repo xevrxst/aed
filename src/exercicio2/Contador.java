@@ -28,7 +28,7 @@ public class Contador {
     public String toString() {
         return "Contador com valor:" + valor;
     }
-    public Contador copiar() {
+    public Contador clone() {
         return new Contador(valor);
     }
 }
