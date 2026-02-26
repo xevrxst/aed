@@ -26,7 +26,7 @@ public class Contador {
     }
     @Override
     public String toString() {
-        return "Contador(valor=" + valor + ")";
+        return "Contador com valor:" + valor;
     }
     public Contador copiar() {
         return new Contador(valor);
