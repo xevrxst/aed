@@ -20,7 +20,15 @@ public class Contador {
     public int get() {
         return valor;
     }
-    public void verificar() {
-        
+    public boolean equals(Contador outro) {
+        if (outro == null) return false;
+        return valor == outro.get();
+    }
+    @Override
+    public String toString() {
+        return "Contador(valor=" + valor + ")";
+    }
+    public Contador copiar() {
+        return new Contador(valor);
     }
 }
